@@ -17,7 +17,7 @@ session = driver.session(database="abc")
 clean_slate_cypher = "match (n) with n detach delete n"
 session.run(clean_slate_cypher)
 
-# Load the Windsors family tree into the graph database.
+# Load a fictional family tree into the graph database.
 family_tree_cypher = """
 CREATE (n01:Person {name: "Adam Adams", gender: "male", died: date("1952-02-06") }),
  (n02:Person {name: "Adelle Adams", gender: "female", died: date("2022-03-30") }),
